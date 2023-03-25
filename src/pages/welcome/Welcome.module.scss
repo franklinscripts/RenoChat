@@ -7,6 +7,7 @@ $light-gray:#e3e3e7;
     min-height: 100vh;
     display:grid;
     place-items:center;
+    padding:10px;
 }
 
 .container{
@@ -21,18 +22,25 @@ $light-gray:#e3e3e7;
     box-shadow: 0px 4px 8px rgba(51, 6, 6, 0.473);
     padding:25px;
 
+    @media screen and (max-width:375px){
+        padding:25px 10px;
+    }
+
     h1{
         font-size: 35px;
         font-weight: 700;
         color: #fffffff6;
         letter-spacing: 4px;
         
+        @media screen and (max-width:768px){
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
     }
     
 }
 
 .mid{
-    width: 350px;
     margin-top: 5rem;
     text-align: center;
 
@@ -41,18 +49,34 @@ $light-gray:#e3e3e7;
         font-family: 'Raleway', sans-serif;
         color:#eff6fffb;
 
+        @media screen and (max-width:768px){
+            font-size:20px;
+        }
+
         span{
             color:  rgb(255, 140, 63);
             font-size: 34px;
+
+            @media screen and (max-width:768px){
+                font-size:20px;
+            }
         }
     }
     hr{
         margin:1rem 0;
         border-radius: 50%;
         border: 1px solid rgba(138, 138, 138, 0.801);
+
+        @media screen and (max-width:768px){
+            margin:.4rem 0;
+        }
     }
     p{
         color:$light-gray;
+
+        @media screen and (max-width:768px){
+            font-size:15px;
+        }
     }
    
 }
@@ -62,6 +86,9 @@ $light-gray:#e3e3e7;
     align-items: center;
     margin-top: 5rem;
     column-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 15px;
 
     button{
         width: 160px;
@@ -73,7 +100,7 @@ $light-gray:#e3e3e7;
 
         &:first-child{
             background-color:inherit;
-            color: rgba(255, 255, 255, 0.836);
+            color: #fff;
             border: 1px solid #420a0afa;
         }
         &:last-child{
@@ -83,7 +110,7 @@ $light-gray:#e3e3e7;
         }
         &:hover{
             background-color:#420a0afa;
-            color: rgba(255, 255, 255, 0.664);
+            color: #fff;
         }
     }
 }

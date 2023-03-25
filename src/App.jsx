@@ -1,11 +1,16 @@
 import './App.css'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Welcome from './pages/welcome/Welcome'
+
 
 function App() {
   return(
     <div className="app">
-      {/* <Home /> */}
-      <Welcome />
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Welcome/>} />
+        </Routes>
+      </Router>
     </div>
   )
 }
