@@ -7,4 +7,5 @@ We Started this project with just a phone call and imagined how it will look lik
 We just wanted to have a collaborative work done together as a team, to boost our portfolio and maybe sell our idea across the globe.
 
 We started with our Landing page
+ ![Alt text](public/demo.png)
 
