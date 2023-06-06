@@ -1,19 +1,23 @@
 import React from 'react'
-import styles from './Welcome.module.scss'
+import lit from './Welcome.module.scss'
+import Navbar from '../../components/Navbar/Navbar'
+import Hero from '../../components/Hero/Hero'
+
+import Features from '../../components/Features/Features'
+import Market from '../../components/Market/Market'
+// import DarkMode from '../../components/Darkmode/DarkMode/DarkMode'
 const Welcome = () => {
+  const styles =  {
+    position:  "absolute",
+    
+  }
   return (
-    <div className={styles.welcome}>
-      <div className={styles.container}>
-          <h1>RenoChat</h1>
-          <div className={["div-style", styles.mid].join(' ')}>
-            <b>Learn and <span>Connect</span> with like minded.</b>
-            <hr />
-            <p>The Fast, Fun and effective way to Grow.</p>
-          </div>
-          <div className={styles.btns}>
-            <button>Get Started</button>
-            <button>Already a Member?</button>
-          </div>
+    <div className={lit.container}>
+      <div className={lit.width}>
+        <Navbar  className={lit.sticky}/>
+        <Hero className=""/>
+        <Features />
+        <Market />
       </div>
     </div>
   )

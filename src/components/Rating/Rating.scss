@@ -1,0 +1,57 @@
+.rating-container{
+    // background-color: red;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+
+    // justify-content: space-between;
+    gap: 2em;
+    @media screen and (max-width: 1240px) {
+        padding: 10px 20px ;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    // position: relative;
+    .image-stack{
+            // display: flex;
+       
+            position: relative;
+            
+            width: 100px;
+            .p{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                // justify-content: center;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+         
+                img{
+                    width: 42px;
+                }
+                .ml-2{
+                    margin-left:-1rem;
+                }
+                .ml-1{
+                    margin-left: -1rem;
+                }
+            }
+
+        
+
+    }
+    .rate{
+        // margin-top: 2em;
+        span{
+            color: rgba(245, 245, 245, 0.658);
+            font-size: 14px;
+        }
+    }
+}

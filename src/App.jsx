@@ -1,19 +1,26 @@
-import './App.css'
+
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Welcome from './pages/welcome/Welcome'
+import './styles/index.scss'
+import Login from './pages/login/Login'
+import SignUp from './pages/signUp/SignUp'
+
 
 
 function App() {
   return(
-    <div className="app">
+
+    <div >
+
       <Router>
         <Routes>
           <Route exact path='/' element={<Welcome/>} />
-          <Route exact path='/login' element={<Welcome/>} />
-          <Route exact path='/signup' element={<Welcome/>} />
+          <Route exact path='/login' element={<Login/>} />
+          <Route exact path='/signup' element={<SignUp/>} />
         </Routes>
       </Router>
     </div>
+
   )
 }
 

@@ -1,0 +1,19 @@
+.button{
+    button{
+        padding: 15px 40px;
+        // width: 200px;
+        color: whitesmoke !important;
+        border:none;
+        border-radius: 2px;
+        font-size: 12px;
+        font-weight: bold;
+        background:  linear-gradient(180deg, #2F08CA 0%, #76049E 100%);
+        cursor: pointer;
+        &:hover{
+            opacity: .7;
+        
+
+        } 
+        
+    } 
+}
